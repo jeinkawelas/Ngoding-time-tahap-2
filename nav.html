@@ -1,0 +1,22 @@
+ <nav>
+    <h2>Offsite Links</h2>
+    <a href="http://www.w3c.org">W3C</a><br>
+    <a href="http://www.htmlref.com">Book site</a><br>
+    <a href="http://www.pint.com">Author's Firm</a><br>
+ </nav>
+        Conventionally, many Web developers have used <ul> and <li> tags to encapsulate 
+    navigation and then styled the elements appropriately as menu items. This seems to 
+    introduce quite a bit of ambiguity in markup because it may be difficult to determine the 
+    difference between a list that has links in it and a list that is simply navigation. The 
+    semantics defined by HTML5 for a <nav> tag eliminate this confusion. Interestingly, there is 
+    no requirement to avoid using <ul> and <li> tags within navigation, so if you are a CSS 
+    aficionado who is comfortable with that approach, it is fine to use markup like this:
+
+<nav id="mainNav">
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
