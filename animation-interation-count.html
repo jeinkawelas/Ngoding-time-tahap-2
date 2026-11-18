@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSS Animations - animation‑iteration‑count</title>
+<style type="text/css">
+@keyframes resize {
+  from {
+    height: 300px;
+    width: 100px;
+    left: 0; top: 0;
+  }
+  50% {
+    height: 100px;
+    width: 100px;
+    left: 300px; top: 0;
+  }
+  to {
+    height: 100px;
+    width: 300px;
+    left: 300px; top: 300px;
+  }
+}
+
+@keyframes move {
+  from { left: 150px; top: 150px; }
+  50%  { left: 300px; top: 0; }
+  to   { left: 400px; top: 200px; }
+}
+
+#anim1 {
+  animation-name: resize;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  background-color: purple;
+  color: white;
+}
+
+#anim2 {
+  animation-name: move;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  position: absolute;
+  top: 150px; left: 150px;
+  background-color: orange;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div id="anim1">Watch me move and change size forever!</div>
+<div id="anim2">Watch me move two times!</div>
+</body>
+</html>
