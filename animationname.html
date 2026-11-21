@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSS Animations - animation‑name</title>
+<style type="text/css">
+@keyframes move {
+  from { top: 0; left: 0; opacity: 1; }
+  50%  { top: 0; left: 500px; opacity: 0.5; }
+  to   { top: 500px; left: 500px; opacity: 0.1; }
+}
+
+@keyframes resize {
+  from { height: 300px; width: 100px; }
+  50%  { height: 100px; width: 100px; }
+  to   { height: 100px; width: 300px; }
+}
+
+@keyframes fade {
+  from { opacity: 1; }
+  50%  { opacity: 0.5; }
+  to   { opacity: 0.1; }
+}
+
+#anim1 {
+  animation-name: move, resize, fade;
+  animation-duration: 10s;
+  position: absolute;
+  background-color: purple;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div id="anim1">Watch me move and vanish!</div>
+</body>
+</html>

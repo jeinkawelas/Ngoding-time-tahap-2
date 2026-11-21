@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf‑8">
+<title>behavior and binding Example</title>
+<style type="text/css">
+#clickable {
+  cursor: pointer;
+  color: darkblue;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<p>Just a regular paragraph.</p>
+<p id="clickable">I'm special click me.</p>
+<p>Just a regular paragraph.</p>
+
+<script>
+document.getElementById("clickable").addEventListener("click", function() {
+  alert("Elemen khusus telah diklik!");
+});
+</script>
+</body>
+</html>
