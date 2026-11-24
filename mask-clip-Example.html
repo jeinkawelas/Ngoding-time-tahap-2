@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mask‑clip Example</title>
+<style type="text/css">
+div {
+  height: 50px;
+  width: 150px;
+  float: left;
+  margin: 20px;
+  padding: 20px;
+  background-color: red;
+  font: bold xx‑large;
+  border: 15px solid black;
+  mask-image: url(starmask.png);
+  mask-repeat: repeat;
+  mask-size: 20px 20px;
+}
+#d1 { mask-clip: content; }
+#d2 { mask-clip: border; }
+#d3 { mask-clip: padding; }
+</style>
+</head>
+<body>
+<div id="d1">content</div>
+<div id="d2">border</div>
+<div id="d3">padding</div>
+</body>
+</html>

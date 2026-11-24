@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cross‑browser Downloadable Fonts Example</title>
+<style type="text/css">
+@font-face {
+  font-family: "Mufferaw";
+  src: url("mufferaw.woff2") format("woff2"),
+       url("mufferaw.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+p {
+  font-family: serif;
+  font-size: 5em;
+}
+#muff {
+  font-family: "Mufferaw", serif;
+}
+</style>
+</head>
+<body>
+<p id="muff">This should be Mufferaw a True Type font.</p>
+<p>This should be the standard serif font.</p>
+</body>
+</html>

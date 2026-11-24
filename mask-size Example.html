@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mask‑size Example</title>
+<style type="text/css">
+img.masked {
+  mask-image: url(starmask3.png);
+}
+</style>
+</head>
+<body>
+<img src="tucker.jpg" width="200" height="133" class="masked">
+
+<img src="tucker.jpg" width="200" height="133"
+     class="masked" style="mask-size: 10px;">
+
+<img src="tucker.jpg" width="200" height="133"
+     class="masked" style="mask-size: 50px 50px;">
+
+<img src="tucker.jpg" width="200" height="133"
+     class="masked" style="mask-size: 200px 133px;">
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>filter‑transitions Example</title>
+<style type="text/css">
+div {
+  padding: 30px;
+}
+#rd {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  height: 250px;
+  width: 175px;
+}
+#rdimage1, #rdimage2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 133px;
+}
+#rdimage2 {
+  animation: fadeSwitch 4s infinite;
+  opacity: 0;
+}
+@keyframes fadeSwitch {
+  0%   { opacity: 0; }
+  50%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+</style>
+</head>
+<body>
+<h2>Random Dissolve</h2>
+<div id="rd">
+  <img src="tucker.jpg" id="rdimage1" width="200" height="133">
+  <img src="angus.jpg" id="rdimage2" width="200" height="133">
+</div>
+</body>
+</html>
